@@ -1,4 +1,4 @@
-package barnum.com.doormonitor;
+package com.barnum.doormonitor;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;

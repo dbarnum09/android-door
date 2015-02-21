@@ -1,4 +1,4 @@
-package barnum.com.doormonitor;
+package com.barnum.doormonitor;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -1,14 +1,13 @@
-package barnum.com.doormonitor;
+package com.barnum.doormonitor;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
 
-import barnum.com.doormonitor.tasks.AsyncTaskResult;
+import com.barnum.doormonitor.tasks.AsyncTaskResult;
 
-
-public class DoorStatusService extends Service implements AsyncTaskResult{
+public class DoorStatusService extends Service implements AsyncTaskResult {
 
     private final static String LOG_TAG = DoorStatusService.class.getSimpleName();
 

@@ -1,6 +1,7 @@
-package barnum.com.doormonitor.tasks;
+package com.barnum.doormonitor.tasks;
 
-import barnum.com.doormonitor.DigitalPinStatus;
+
+import com.barnum.doormonitor.DigitalPinStatus;
 
 /**
  * Created by davebarnum on 2/15/15.

@@ -1,4 +1,4 @@
-package barnum.com.doormonitor;
+package com.barnum.doormonitor;
 
 import android.os.AsyncTask;
 import android.util.Log;
@@ -10,7 +10,7 @@ import com.squareup.okhttp.Response;
 
 import java.io.IOException;
 
-import barnum.com.doormonitor.tasks.AsyncTaskResult;
+import com.barnum.doormonitor.tasks.AsyncTaskResult;
 
 /**
  * Created by davebarnum on 2/13/15.
