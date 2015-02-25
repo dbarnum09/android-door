@@ -3,6 +3,7 @@
     package="com.barnum.doormonitor" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -20,6 +21,11 @@
 
         <service
             android:name=".DoorStatusService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service
+            android:name=".LocalService"
             android:enabled="true"
             android:exported="true" >
         </service>

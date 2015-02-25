@@ -3,16 +3,25 @@ package com.barnum.doormonitor;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.barnum.doormonitor.com.barnum.doormonitor.model.DoorManager;
 
-public class MainActivity extends ActionBarActivity {
+import java.util.Observable;
+import java.util.Observer;
+
+
+public class MainActivity extends ActionBarActivity implements Observer{
+
+    private static final  String LOG_TAG= MainActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        DoorManager.getInstance().addObserver(this);
         Intent intent = new Intent(this.getApplicationContext(),DoorStatusService.class);
         startService(intent);
     }
@@ -38,5 +47,10 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void update(Observable observable, Object data) {
+           Log.i(LOG_TAG,"Data:" + data.toString());
     }
 }
